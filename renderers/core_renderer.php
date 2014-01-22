@@ -88,6 +88,61 @@
 
         return $output . $footer;
     }
+
+    /*
+     * This renders the navbar.
+     * Uses bootstrap compatible html.
+     */
+    public function navbar() {
+	$is_course = false;
+        $items = $this->page->navbar->get_items();
+
+	//If this is a course, only output the course node and the last link node (if any)
+	//	 (e.g. $item->action is not null)
+	foreach ($items as $item) {
+		if (!$is_course) { 
+			$is_course = (navigation_node::TYPE_COURSE == $item->type); 
+		}
+	}
+
+	//MMCC edit - show fewer breadcrumbs when in a course
+	if ($is_course) {
+		//Only output some nodes
+		$last_node_found = false;
+		$items = array_reverse($items);
+
+		foreach ($items as $item) {
+			//Only output crumbs with links
+			if (navigation_node::TYPE_COURSE == $item->type ||
+				(!$last_node_found && $item->action)) {
+				$last_node_found = true;
+				$item->hideicon = true;
+				$breadcrumbs[] = $this->render($item);			
+			}
+
+			if (navigation_node::TYPE_COURSE == $item->type) {
+				//We're done here
+				break;
+			}			
+		}
+
+		$breadcrumbs = array_reverse($breadcrumbs);
+	}
+	else {
+		//Output all navigation nodes
+		foreach ($items as $item) {
+			$item->hideicon = true;
+			$breadcrumbs[] = $this->render($item);
+		}
+	}
+
+	/*  Copied from theme/bootstrapbase/core_renderer.php */
+        $divider = '<span class="divider">/</span>';
+        $list_items = '<li>'.join(" $divider</li><li>", $breadcrumbs).'</li>';
+        $title = '<span class="accesshide">'.get_string('pagepath').'</span>';
+        return $title . "<ul class=\"breadcrumb\">$list_items</ul>";
+    }
+
 		
     protected function render_custom_menu(custom_menu $menu) {
     	/*
