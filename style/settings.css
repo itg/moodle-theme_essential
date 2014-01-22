@@ -119,10 +119,7 @@ ul.breadcrumb li:after {
     filter: none;
 }
 
-.navbar .nav{
-    border-right:1px solid [[setting:themehovercolor]];
-}
-
+/*
 .navbar .nav > li > a{
     border-left:1px solid [[setting:themehovercolor]];
 }
@@ -130,19 +127,22 @@ ul.breadcrumb li:after {
 .navbar .nav > li > a:hover{
     background:[[setting:themehovercolor]] !important;
 }
+*/
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
 .navbar .nav .active > a:focus,
-.navbar .nav li.dropdown.open > .dropdown-toggle,
+/* .navbar .nav li.dropdown.open > .dropdown-toggle, */
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     background: [[setting:themecolor]] !important;
 }
 
+/*
 .navbar .nav > li > a {
     border-left: 1px solid [[setting:themehovercolor]];
 }
+*/
 
 /* @end */
 

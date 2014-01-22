@@ -292,19 +292,19 @@ ul.socials {
     margin-top: -4px;
 }
 
+.breadcrumb-button a {
+    color: #fff;
+}
+
 ul.breadcrumb span.divider {
     display: none;
 }
 
-ul.breadcrumb li:after { 
+ul.breadcrumb li:before { 
     font-family: FontAwesome;
     font-size: 1.1em;
-    margin: 0px 6px 0px 3px;
+    margin: 0px 3px 0px 6px;
     color: #bbb;
-}
-
-ul.breadcrumb li:last-child:after { 
-    content: none; 
 }
 
 .navbar {
@@ -316,6 +316,11 @@ ul.breadcrumb li:last-child:after {
     border-radius: 0px;
     line-height: 0px;
     background-image: none;
+}
+
+/* Get rid of this border */
+.navbar-inner ul.nav{
+    border-right: none;
 }
 
 .navbar .brand {
@@ -344,7 +349,7 @@ ul.breadcrumb li:last-child:after {
     text-shadow: none;
 }
 
-.navbar .nav > li > a:hover {
+.nav-collapse.active .nav > li > a:hover {
     color: #fff;
 }
 
@@ -363,7 +368,8 @@ div.mdl-align.title {
 	margin-bottom: 15px;
 }
 
-.course-content ul.topics li.section.main.clearfix.current {
+.course-content ul.topics li.section.main.clearfix.current,
+.course-content ul.weeks  li.section.main.clearfix.current {
     border-radius: 5px;
 }
 
