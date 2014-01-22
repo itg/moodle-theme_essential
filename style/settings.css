@@ -108,7 +108,7 @@ a.website .icon-stack:hover, a.icon-sign-blank:focus {
 /* @group Navbar
  */
 
-ul.breadcrumb li:after { 
+ul.breadcrumb li:before { 
     content: "[[setting:navbarsep]]";
 }
 

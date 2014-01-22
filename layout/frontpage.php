@@ -287,7 +287,6 @@ echo $OUTPUT->doctype() ?>
     
     <!-- End Main Regions -->
 
-</div>
     <?php if (is_siteadmin()) { ?>
 	<div class="hidden-blocks">
     	<div class="row-fluid">
@@ -299,6 +298,7 @@ echo $OUTPUT->doctype() ?>
 	</div>
 	<?php } ?>
 
+</div>
 	<footer id="page-footer" class="container-fluid">
 		<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
 	</footer>

@@ -331,8 +331,8 @@ ul.breadcrumb li:before {
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
-.navbar .nav .active > a:focus,
-.navbar .nav li.dropdown.open > .dropdown-toggle,
+/*.navbar .nav .active > a:focus, */
+/*.navbar .nav li.dropdown.open > .dropdown-toggle,*/
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     color: #fff;
@@ -344,7 +344,8 @@ ul.breadcrumb li:before {
     margin-left: 5px;
 }
 
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover {
     color: #fff;
     text-shadow: none;
 }

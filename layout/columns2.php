@@ -93,6 +93,7 @@ echo $OUTPUT->doctype() ?>
     </div>
     
     <!-- End Main Regions -->
+</div>
 
     <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><p><?php print_string('backtotop', 'theme_essential'); ?></p></a>
 
@@ -102,7 +103,6 @@ echo $OUTPUT->doctype() ?>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
-</div>
 
 <!-- Start Google Analytics -->
 <?php if ($hasanalytics) { ?>
