@@ -506,6 +506,11 @@ body,
 
 [[setting:customcss]]
 
+/* This has to be here because otherwise the image param will not be resolved properly */
+body {
+  background: url([[pix:theme|bg/bg]]) repeat-x top left #38698f;
+}
+
 /**
  * editicons CSS
  * This adds the special editicons css in editicons.css if the setting is enabled.
