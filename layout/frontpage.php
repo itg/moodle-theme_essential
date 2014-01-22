@@ -287,6 +287,7 @@ echo $OUTPUT->doctype() ?>
     
     <!-- End Main Regions -->
 
+</div>
     <?php if (is_siteadmin()) { ?>
 	<div class="hidden-blocks">
     	<div class="row-fluid">
@@ -303,8 +304,6 @@ echo $OUTPUT->doctype() ?>
 	</footer>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
-
-</div>
 
 <!-- Start Google Analytics -->
 <?php if ($hasanalytics) { ?>
