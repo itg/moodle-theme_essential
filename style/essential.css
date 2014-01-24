@@ -1200,6 +1200,10 @@ table#greyboxleft h2 {
     text-align: left;
 }
 
+#page-footer a.menu-action:hover {
+    color: #fff;
+}
+
 .helplink {
     float: right;
     padding-right: 20px;
@@ -1261,7 +1265,6 @@ table#greyboxleft h2 {
     padding-left: 0px;
 }
 
-#page-footer .block_html ul li:before,
 #greyboxright ul li:before {
     content:"\f105";
     display: inline-block;
