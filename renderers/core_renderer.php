@@ -107,15 +107,13 @@
 
 	//MMCC edit - show fewer breadcrumbs when in a course
 	if ($is_course) {
-		//Only output some nodes
-		$last_node_found = false;
 		$items = array_reverse($items);
 
 		foreach ($items as $item) {
-			//Only output crumbs with links
-			if (navigation_node::TYPE_COURSE == $item->type ||
-				(!$last_node_found && $item->action)) {
-				$last_node_found = true;
+			//Only output important crumbs
+			if (navigation_node::TYPE_COURSE   == $item->type ||
+			    navigation_node::TYPE_ACTIVITY == $item->type ||
+			    navigation_node::TYPE_RESOURCE == $item->type) {
 				$item->hideicon = true;
 				$breadcrumbs[] = $this->render($item);			
 			}
