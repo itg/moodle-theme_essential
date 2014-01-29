@@ -315,6 +315,10 @@ a#button:hover {
     color: [[setting:footerurlcolor]];
 }
 
+#page-footer a.menu-action {
+    color: [[setting:themecolor]];
+}
+
 #page-footer .footnote a,
 #page-footer .footnote a:visited {
     color: [[setting:themecolor]] !important;
