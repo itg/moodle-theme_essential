@@ -784,7 +784,7 @@ table#greyboxleft h2 {
     margin-right: 5px;
 }
 
-.block_navigation.block li.type_user > .tree_item.branch:first-child:before {
+.block_navigation.block li.type_user > .tree_item.branch:before {
     content: "\f007 ";
 }
 
