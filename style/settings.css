@@ -463,6 +463,16 @@ a#button:hover {
     background: [[setting:themecolor]];
 }
 
+#page-mod-quiz-edit .questionbankwindow a#showbankcmd,
+#page-mod-quiz-edit .questionbankwindow a#hidebankcmd {
+    background-color: [[setting:themecolor]];
+}
+
+#page-mod-quiz-edit .questionbankwindow a#showbankcmd:hover,
+#page-mod-quiz-edit .questionbankwindow a#hidebankcmd:hover {
+    color: #FFFFFF;
+    background-color: [[setting:themehovercolor]];
+}
 /* @end */
 
 /* @group Back to top */
