@@ -524,10 +524,6 @@ letter-spacing:0.1em;
     border: 1px solid #333;
 }
 
-.container-fluid {
-    max-width: [[setting:pagewidth]];
-}
-
 #region-main {
     padding-right: 10px;
 }
