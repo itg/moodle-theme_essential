@@ -201,6 +201,14 @@ a#button:hover {
     background:[[setting:themehovercolor]];
 }
 
+#listdirectories .button a:hover {
+    background:[[setting:themehovercolor]];
+}
+
+#listdirectories a {
+    color:#FFFFFF;
+}
+
 /* @end */
 
 /* @group Slideshow */
