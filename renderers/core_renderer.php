@@ -105,7 +105,6 @@
 		}
 	}
 
-	//MMCC edit - show fewer breadcrumbs when in a course
 	if ($is_course) {
 		$items = array_reverse($items);
 
