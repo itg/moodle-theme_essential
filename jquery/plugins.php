@@ -49,5 +49,5 @@ $plugins = array(
     'cslider'     => array('files' => array('cslider_1.0.js')),
     'custom'   => array('files' => array('custom_1.0.js')),
     'hideabox' => array('files' => array('hideabox.js')),
-    'fixed_timer' => array('files' => array('fixed_timer_1.0.js')),
+    'fixed_timer' => array('files' => array('fixed_timer_1.1.js')),
 );

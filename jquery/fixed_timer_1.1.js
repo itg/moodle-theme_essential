@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-    var top =$(".navbar-inner").first().offset().top + $(".navbar-inner").first().height();
+    var top = 40;
+    if ($(".navbar-inner")[0]) {
+        top = $(".navbar-inner").first().offset().top + $(".navbar-inner").first().height();
+    }
  
     //floating quiz_timer
     $('#mod_quiz_navblock div#quiz-timer')
