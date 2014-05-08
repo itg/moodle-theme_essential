@@ -838,4 +838,6 @@ function theme_essential_page_init(moodle_page $page) {
     $page->requires->jquery_plugin('tooltip', 'theme_essential');
     $page->requires->jquery_plugin('transition', 'theme_essential');
     $page->requires->jquery_plugin('modernizr', 'theme_essential');  
+    $page->requires->jquery_plugin('hideabox', 'theme_essential');  
+    $page->requires->jquery_plugin('fixed_timer', 'theme_essential');  
 }

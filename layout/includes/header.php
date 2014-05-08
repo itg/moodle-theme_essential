@@ -77,8 +77,8 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         	<div class="span6">
         <?php } else if ($hassocialnetworks && !$hasmobileapps) { ?>
         	<div class="span6">
-        <?php } else { ?>
-        	<div class="span11">
+        <?php } else { //MMCC edit (following line) ?>
+        	<div class="span10">
         <?php } ?>
             <?php if (!$haslogo) { ?>
                 <i id="headerlogo" class="fa fa-<?php echo $PAGE->theme->settings->siteicon ?>"></i>
@@ -95,7 +95,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
             <?php } ?>
         </div>
         <?php if (isloggedin() && $hasheaderprofilepic) { ?>
-        <div class="span1 pull-right" id="profilepic">
+        <div class="span2 pull-right" id="profilepic">
             <p id="socialheading"><?php echo $USER->firstname; ?></p>
             <ul class="socials unstyled">
                 <li>

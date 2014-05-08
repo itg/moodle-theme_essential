@@ -81,7 +81,7 @@ $THEME->layouts = array(
     'incourse' => array(
         'file' => 'columns3.php',
         'regions' => array('side-pre', 'side-post', 'footer-left', 'footer-middle', 'footer-right'),
-        'defaultregion' => 'side-post',
+        'defaultregion' => 'side-pre',
     ),
     // Server administration scripts.
     'admin' => array(

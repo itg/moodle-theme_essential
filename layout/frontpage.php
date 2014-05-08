@@ -309,13 +309,12 @@ echo $OUTPUT->doctype() ?>
 	</div>
 	<?php } ?>
 
+</div>
 	<footer id="page-footer" class="container-fluid">
 		<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
 	</footer>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
-
-</div>
 
 <!-- Start Google Analytics -->
 <?php if ($hasanalytics) { ?>

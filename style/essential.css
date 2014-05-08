@@ -295,19 +295,19 @@ ul.socials {
     margin-top: -4px;
 }
 
+.breadcrumb-button a {
+    color: #fff;
+}
+
 ul.breadcrumb span.divider {
     display: none;
 }
 
-ul.breadcrumb li:after { 
+ul.breadcrumb li:before { 
     font-family: FontAwesome;
     font-size: 1.1em;
-    margin: 0px 6px 0px 3px;
+    margin: 0px 3px 0px 6px;
     color: #bbb;
-}
-
-ul.breadcrumb li:last-child:after { 
-    content: none; 
 }
 
 .navbar {
@@ -321,6 +321,11 @@ ul.breadcrumb li:last-child:after {
     background-image: none;
 }
 
+/* Get rid of this border */
+.navbar-inner ul.nav{
+    border-right: none;
+}
+
 .navbar .brand {
     color: #fff !important;
     text-shadow: none;
@@ -329,8 +334,8 @@ ul.breadcrumb li:last-child:after {
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
-.navbar .nav .active > a:focus,
-.navbar .nav li.dropdown.open > .dropdown-toggle,
+/*.navbar .nav .active > a:focus, */
+/*.navbar .nav li.dropdown.open > .dropdown-toggle,*/
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     color: #fff;
@@ -342,12 +347,13 @@ ul.breadcrumb li:last-child:after {
     margin-left: 5px;
 }
 
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover {
     color: #fff;
     text-shadow: none;
 }
 
-.navbar .nav > li > a:hover {
+.nav-collapse.active .nav > li > a:hover {
     color: #fff;
 }
 
@@ -366,7 +372,8 @@ div.mdl-align.title {
 	margin-bottom: 15px;
 }
 
-.course-content ul.topics li.section.main.clearfix.current {
+.course-content ul.topics li.section.main.clearfix.current,
+.course-content ul.weeks  li.section.main.clearfix.current {
     border-radius: 5px;
 }
 
@@ -404,6 +411,14 @@ h2.pagetitle span {
 	font-size: .5em;
 }
 
+<<<<<<< HEAD
+=======
+.listitem .fa-circle {
+	margin-right: 10px;
+	font-size: .5em;
+}
+
+>>>>>>> MMCC_26
 #course-category-listings li #icon{
 	margin-left:0
 }
@@ -436,7 +451,10 @@ h2.pagetitle span {
 	margin-left:5.5em
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> MMCC_26
 /* @group Course Footer */
 
 #section_footer {
@@ -514,10 +532,6 @@ letter-spacing:0.1em;
 
 .side-pre {
     border: 1px solid #333;
-}
-
-.container-fluid {
-    max-width: [[setting:pagewidth]];
 }
 
 #region-main {
@@ -1192,6 +1206,10 @@ table#greyboxleft h2 {
     text-align: left;
 }
 
+#page-footer a.menu-action:hover {
+    color: #fff;
+}
+
 .helplink {
     float: right;
     padding-right: 20px;
@@ -1253,7 +1271,6 @@ table#greyboxleft h2 {
     padding-left: 0px;
 }
 
-#page-footer .block_html ul li:before,
 #greyboxright ul li:before {
     content:"\f105";
     display: inline-block;
@@ -1711,6 +1728,7 @@ table.calendarmonth.calendartable {
 .back-to-top:hover{
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 .back-to-top a,
 .back-to-top a:visited {
@@ -1769,3 +1787,5 @@ table.calendarmonth.calendartable {
         width: calc(100% - 2.5641% - 285px);
     }
 }
+=======
+>>>>>>> MMCC_26
