@@ -411,14 +411,11 @@ h2.pagetitle span {
 	font-size: .5em;
 }
 
-<<<<<<< HEAD
-=======
 .listitem .fa-circle {
 	margin-right: 10px;
 	font-size: .5em;
 }
 
->>>>>>> MMCC_26
 #course-category-listings li #icon{
 	margin-left:0
 }
@@ -451,10 +448,6 @@ h2.pagetitle span {
 	margin-left:5.5em
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> MMCC_26
 /* @group Course Footer */
 
 #section_footer {
@@ -1709,14 +1702,13 @@ table.calendarmonth.calendartable {
     right: 15px;
     display: none;
     text-align:center; 
-    font:9px; 
     text-transform:uppercase; 
     text-decoration:none;
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-box-shadow: 0 0 1px #fff;
     -moz-box-shadow: 0 0 1px #fff;
     box-shadow: 0 0 1px #fff;
@@ -1728,7 +1720,6 @@ table.calendarmonth.calendartable {
 .back-to-top:hover{
     text-decoration: none;
 }
-<<<<<<< HEAD
 
 .back-to-top a,
 .back-to-top a:visited {
@@ -1787,5 +1778,3 @@ table.calendarmonth.calendartable {
         width: calc(100% - 2.5641% - 285px);
     }
 }
-=======
->>>>>>> MMCC_26

@@ -138,6 +138,6 @@ jQuery(document).ready(function() {
     })
 });
 </script>
-<a href="#top" class="back-to-top" title="<?php print_string('backtotop', 'theme_essential'); ?>"><i class="fa fa-angle-up "></i></a>
+<a href="#top" class="back-to-top" title="<?php print_string('backtotop', 'theme_essential'); ?>"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
 </body>
 </html>
