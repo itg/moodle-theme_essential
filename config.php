@@ -103,9 +103,8 @@ $THEME->layouts = array(
         'defaultregion' => 'side-post',
     ),
     'login' => array(
-        'file' => 'columns1.php',
-        'regions' => array('footer-left', 'footer-middle', 'footer-right', 'hidden-dock'),
-        'defaultregion' => 'footer-right',
+        'file' => 'login.php',
+        'regions' => array(),
         'options' => array('langmenu'=>true),
     ),
 
@@ -149,7 +148,7 @@ $THEME->layouts = array(
     ),
     // The pagelayout used for reports.
     'report' => array(
-        'file' => 'columns1.php',
+        'file' => 'columns2.php',
         'regions' => array('side-pre', 'footer-left', 'footer-middle', 'footer-right'),
         'defaultregion' => 'side-pre',
     ),
