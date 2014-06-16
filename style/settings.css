@@ -418,7 +418,7 @@ a#button:hover {
 }
     
 #page-footer .footnote:after {
-    content: '';
+    content: 'Moodle server 3';
     font-style: italic;
     color: [[setting:footerurlcolor]];
 }
