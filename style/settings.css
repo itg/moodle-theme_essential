@@ -417,6 +417,12 @@ a#button:hover {
     color: [[setting:themecolor]];
 }
     
+#page-footer .footnote:after {
+    content: '';
+    font-style: italic;
+    color: [[setting:footerurlcolor]];
+}
+
 /* @end */
 
 /* @end */
