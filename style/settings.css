@@ -416,8 +416,7 @@ a#button:hover {
     color: [[setting:themecolor]];
 }
     
-#page-footer .footnote:after {
-    content: '';
+#page-footer .footnote .serverinfo {
     font-style: italic;
     color: [[setting:footerurlcolor]];
 }
