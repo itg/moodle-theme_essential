@@ -326,7 +326,6 @@ a#button:hover {
 /* @end */
 
 /* @group Frontpage */
-#site-news-forum,
 #frontpage-course-list,
 #frontpage-category-combo,
 #frontpage-category-names {
@@ -417,8 +416,7 @@ a#button:hover {
     color: [[setting:themecolor]];
 }
     
-#page-footer .footnote:after {
-    content: 'Moodle server 2';
+#page-footer .footnote .serverinfo {
     font-style: italic;
     color: [[setting:footerurlcolor]];
 }

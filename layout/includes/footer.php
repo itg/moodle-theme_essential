@@ -29,7 +29,7 @@ $footerm = 'footer-middle';
 $footerr = 'footer-right';
 
 $hascopyright = (empty($PAGE->theme->settings->copyright)) ? false : $PAGE->theme->settings->copyright;
-$hasfootnote = (empty($PAGE->theme->settings->footnote)) ? false : $PAGE->theme->settings->footnote;
+$hasfootnote = (empty($PAGE->theme->settings->footnote)) ? false : str_replace('[[year]]', date("Y"), $PAGE->theme->settings->footnote);
 $hasfooterleft = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('footer-left', $OUTPUT));
 $hasfootermiddle = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('footer-middle', $OUTPUT));
 $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('footer-right', $OUTPUT));
@@ -53,7 +53,9 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
     } ?>
     
     <?php if ($hasfootnote) {
-        echo '<div class="footnote">'.$hasfootnote.'</div>';
+        echo '<div class="footnote">'.$hasfootnote;
+        echo '<p class="serverinfo"></p>';
+        echo '</div>';
     } ?>
 	</div>
 	<?php echo $OUTPUT->standard_footer_html(); ?>
