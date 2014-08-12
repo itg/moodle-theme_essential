@@ -54,7 +54,7 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
     
     <?php if ($hasfootnote) {
         echo '<div class="footnote">'.$hasfootnote;
-        echo '<p class="serverinfo"></p>';
+        echo '<p class="serverinfo">Moodle Server 1</p>';
         echo '</div>';
     } ?>
 	</div>
