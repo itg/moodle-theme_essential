@@ -159,7 +159,7 @@
 			} else {
 				$branchtitle = get_string('mycourses', 'theme_essential');
 			}
-			$branchlabel = '<i class="fa fa-briefcase"></i>'.$branchtitle;
+			$branchlabel = $branchtitle;
             $branchurl   = new moodle_url('/my/index.php');
             $branchsort  = 10000;
  
