@@ -47,7 +47,19 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
 
 	<div class="footerlinks row-fluid">
     	<hr>
-    	<p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')); ?></p>
+        <p class="helplink">
+<?php
+                        //Make this link open in a new tab/window.
+                        $doc_link = page_doc_link(get_string('moodledocslink'));
+                        if ($doc_link) {
+                            $index = strpos($doc_link, 'href="');
+                            if (FALSE !== $index) {
+                                $doc_link = substr($doc_link, 0, $index) . ' target="_blank" ' . substr($doc_link, $index);
+                                echo $doc_link;
+                            }
+                        }
+
+?></p>
     <?php if ($hascopyright) {
         echo '<p class="copy">&copy; '.date("Y").' '.$hascopyright.'</p>';
     } ?>
