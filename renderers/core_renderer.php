@@ -331,6 +331,17 @@
     }
 }
 
+include_once($CFG->dirroot . "/course/renderer.php");
+require_once($CFG->dirroot . "/mmcc/smart_utils.php");
+
+class theme_essential_core_course_renderer extends core_course_renderer {
+
+    public function frontpage_my_courses(array $showhidden=array()) {
+        // Find the categories to display regardless via SMART data
+        $current_categories = smart_active_moodle_categories();
+        return parent::frontpage_my_courses($current_categories);
+    }
+}
 
 include_once($CFG->dirroot . "/course/format/topics/renderer.php");
  
