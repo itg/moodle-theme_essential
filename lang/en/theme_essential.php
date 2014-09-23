@@ -128,7 +128,7 @@ $string['allcourses'] = 'All Courses';
 $string['allunits'] = 'All Units';
 $string['allmodules'] = 'All Modules';
 $string['allclasses'] = 'All Classes';
-$string['noenrolments'] = 'You have no current enrolments';
+$string['noenrolments'] = 'You have no active courses';
 
 /* My Dashboard custommenu dropdown */
 $string['mydashboard'] = 'My Dashboard';
