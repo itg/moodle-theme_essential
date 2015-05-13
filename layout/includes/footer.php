@@ -66,7 +66,9 @@ $hasfooterright = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->re
     
     <?php if ($hasfootnote) {
         echo '<div class="footnote">'.$hasfootnote;
-        echo '<p class="serverinfo"></p>';
+        if (!isloggedin()) {
+            echo '<p class="serverinfo">' . get_string('alternateloginprompt', 'moodle', html_writer::tag('a', get_string('clickhere'), array('href' => get_login_url() . '?authCAS=NOCAS'))) . '</p>';
+        }
         echo '</div>';
     } ?>
 	</div>

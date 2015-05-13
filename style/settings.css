@@ -418,9 +418,11 @@ a#button:hover {
     
 #page-footer .footnote .serverinfo {
     font-style: italic;
-    color: [[setting:footerurlcolor]];
 }
 
+#page-footer .footnote .serverinfo a {
+    color: [[setting:footerurlcolor]] !important;
+}
 /* @end */
 
 /* @end */
