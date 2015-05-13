@@ -89,14 +89,14 @@ echo $OUTPUT->doctype() ?>
         </section>
     </div>
     <!-- End Main Regions -->
-
-    <footer id="page-footer" class="container-fluid">
-            <?php echo $OUTPUT->standard_footer_html() ;?>     
-    </footer>
-
-    <?php echo $OUTPUT->standard_end_of_body_html() ?>
-
 </div>
+
+<footer id="page-footer" class="container-fluid">
+        <?php echo $OUTPUT->standard_footer_html() ;?>
+</footer>
+
+<?php echo $OUTPUT->standard_end_of_body_html() ?>
+
 
 <!-- Start Google Analytics -->
 <?php if ($hasanalytics) { ?>
