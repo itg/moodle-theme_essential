@@ -1982,6 +1982,10 @@ body {
 
 	/* Remove extra blue border on top */
 	border-top: none !important;
+
+	/* White is the new gradient */
+	background: none !important;
+	background-color: white !important;
 }
 
 #page-content.row-fluid {
