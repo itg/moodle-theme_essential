@@ -1974,3 +1974,94 @@ table.calendarmonth.calendartable {
 
 
 
+/* MMCC Overrides */
+body {
+	/* The body padding only really affected mobile viewports and can be accomplished with padding on content wrapping elements */
+	padding-left: 0;
+	padding-right: 0;
+
+	/* Remove extra blue border on top */
+	border-top: none !important;
+}
+
+#page-content.row-fluid {
+	/* Overrides 100% width */
+	width: auto;
+}
+
+div#page {
+	/* 
+	 * On mobile viewports, we need padding outside the white content 
+	 * while also leaving just enough pixels for scroll bars on Macs/touch devices 
+	 */
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#region-main {
+	/*
+	 * When columns are stacked, it's weird that the main content is narrower than the side contents.
+	 * Removing the padding makes the inner bordered boxes be the same width.
+	 */
+	 padding-right: 0;
+}
+
+nav.navbar-inner {
+	/* Remove extra white border */
+	border: none !important;
+}
+
+a.logo {
+	/* Stop crowding the logo, dude! */
+	margin-bottom: 12px;
+}
+
+#page-header {
+	/* The new MMCC web site is all about the white lines */
+	border-bottom: 1px solid #fff;
+}
+
+/* Getting the logo and avatar to appear on one line was fun! */
+#page-header div.span10 {
+	width: auto !important;
+	float: left !important;
+}
+a.logo {
+	width: 300px !important;
+}
+#page-header #profilepic {
+	width: auto !important;
+	margin-right: 20px !important;
+	margin-top: 5px !important;
+}
+@media (min-width: 768px) {
+	#page-header #profilepic {
+		margin-right: 0 !important;
+		margin-top: 0 !important;
+	}
+}
+/* End of logo and avatar styles */
+
+.navbar-inner {
+	/* Make the first link in the navbar line up with the left edge of the logo */
+	padding-left: 5px;
+
+	/* Make the mobile toggle line up with the right edge of the avatar */
+	padding-right: 15px;
+}
+.navbar-inner .container-fluid {
+	/* Clear the redundant padding */
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#page-footer {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	border: none !important;
+}
+
+.two-column.side-regions-with-max-width #block-region-side-pre {
+	/* Fixes bug with 2 col format where the calculated 2.7% was too wide */
+	margin-left: 2%;
+}
