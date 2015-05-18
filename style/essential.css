@@ -2075,3 +2075,21 @@ table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .pa
 	background-color: #eee !important;
 }
 
+/* ATTO editor fixes */
+.atto_fontcolor_button.atto_menu .dropdown-menu .atto_menuentry {
+    clear: none;
+    float: left;
+}
+
+.atto_fontcolor_button.atto_menu .dropdown-menu {
+    width: 30em;
+}
+
+.atto_backcolor_button.atto_menu .dropdown-menu .atto_menuentry {
+    clear: none;
+    float: left;
+}
+
+.atto_backcolor_button.atto_menu .dropdown-menu {
+    width: 30em;
+}
