@@ -2082,7 +2082,18 @@ table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .pa
 }
 
 .atto_fontcolor_button.atto_menu .dropdown-menu {
-    width: 30em;
+    width: 230px; /* try to show 8 swatches at a time */
+    padding: 5px; /* make padding around swatches consistent - originally 5px on top and bottom only */
+}
+
+.atto_fontcolor_button.atto_menu .dropdown-menu a {
+    padding: 5px; /* reduce padding a little to tighten grid */
+}
+
+.atto_fontcolor_button.atto_menu .dropdown-menu a div {
+    /* overriding the swatch size is difficult because of inline width and height style rules */
+    width: 15px !important;
+    height: 15px !important;
 }
 
 .atto_backcolor_button.atto_menu .dropdown-menu .atto_menuentry {
@@ -2091,5 +2102,17 @@ table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .pa
 }
 
 .atto_backcolor_button.atto_menu .dropdown-menu {
-    width: 30em;
+    width: 230px; /* try to show 8 swatches at a time */
+    padding: 5px; /* make padding around swatches consistent - originally 5px on top and bottom only */
 }
+
+.atto_backcolor_button.atto_menu .dropdown-menu a {
+    padding: 5px; /* reduce padding a little to tighten grid */
+}
+
+.atto_backcolor_button.atto_menu .dropdown-menu a div {
+    /* overriding the swatch size is difficult because of inline width and height style rules */
+    width: 15px !important;
+    height: 15px !important;
+}
+
