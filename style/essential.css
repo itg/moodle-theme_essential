@@ -2065,11 +2065,6 @@ a.logo {
 	border: none !important;
 }
 
-.two-column.side-regions-with-max-width #block-region-side-pre {
-	/* Fixes bug with 2 col format where the calculated 2.7% was too wide */
-	margin-left: 2%;
-}
-
 table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .path-grade-report-grader table tr.range .cell {
 	/* Fix background color for summary row at bottom of grader report */
 	background-color: #eee !important;
