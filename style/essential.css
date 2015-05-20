@@ -2111,6 +2111,42 @@ table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .pa
     height: 15px !important;
 }
 
+.atto_title_button.atto_menu a {
+    /* now that we put HTML tags around the options in this menu...
+       the links re-inherited underlines -- cut that out! */
+    text-decoration: none;
+}
+
+.atto_title_button.atto_menu a:hover h1,
+.atto_title_button.atto_menu a:hover h2,
+.atto_title_button.atto_menu a:hover h3,
+.atto_title_button.atto_menu a:hover h4,
+.atto_title_button.atto_menu a:hover h5,
+.atto_title_button.atto_menu a:hover h6 {
+    /* now that we put HTML tags around the options in this menu...
+       the hover has a blue background, so make sure the text is white */
+    color: #fff !important;
+}
+
+.atto_title_button.atto_menu a h1,
+.atto_title_button.atto_menu a h2,
+.atto_title_button.atto_menu a h3,
+.atto_title_button.atto_menu a h4,
+.atto_title_button.atto_menu a h5,
+.atto_title_button.atto_menu a h6,
+.atto_title_button.atto_menu a p,
+.atto_title_button.atto_menu a pre {
+    /* with six heading levels with HTML tags, the height of this Atto menu
+       was getting ridiculous. it looks more like TinyMCe with no extra margins */
+    margin: 0;
+}
+
+.atto_title_button.atto_menu a h3 {
+    /* we have to override styles inherited by this selector
+       .moodle-dialogue h3 */
+    font-size: 1.75em;
+}
+
 .mform fieldset.collapsible legend a.fheader {
     /* toggleable sections of forms used to have the arrows start outside the line with a -20px left margin */
     margin-left: 0 !important;
@@ -2137,3 +2173,4 @@ fieldset.collapsible {
         margin-left: 2%;
     }
 }
+
