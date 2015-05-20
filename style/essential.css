@@ -2128,3 +2128,12 @@ fieldset.collapsible {
     /* collapsible settings had margins only in headings, moving to the end of the fieldset */
     margin-bottom: 20px;
 }
+
+@media (max-width: 979px) and (min-width: 768px) {
+    /* This is the selector we thought we should override
+       .row-fluid [class*="span"]
+        But that was too aggressive! We're only fixing two column layouts with a column on the right! */
+    body.two-column #block-region-side-pre.pull-right {
+        margin-left: 2%;
+    }
+}
