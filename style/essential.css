@@ -2111,3 +2111,20 @@ table#user-grades td.controls, .path-grade-report-grader table tr.avg .cell, .pa
     height: 15px !important;
 }
 
+.mform fieldset.collapsible legend a.fheader {
+    /* toggleable sections of forms used to have the arrows start outside the line with a -20px left margin */
+    margin-left: 0 !important;
+}
+
+legend.ftoggler {
+    /* toggleable sections had lines between their headings and content...flipping that model on its head by moving the border above */
+    margin-bottom: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none !important;
+    padding-top: 5px;
+}
+
+fieldset.collapsible {
+    /* collapsible settings had margins only in headings, moving to the end of the fieldset */
+    margin-bottom: 20px;
+}
